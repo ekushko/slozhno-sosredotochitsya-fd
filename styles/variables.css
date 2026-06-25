@@ -2,3 +2,30 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --cover-path: url("../images/cover-image.png");
+
+  --main-font-family: 'IBM Plex mono', 'Arial', sans-serif;
+
+  --pink: #FF0070;
+  --light-pink: #F1B2CE;
+  --violet: #DB00FF;
+  --black: #000028;
+
+  --bg-color: var(--black);
+
+  --title-color: var(--violet);
+  --title-subcolor: var(--pink);
+
+  --header-button-color: var(--pink);
+
+  --section-title-color: var(--pink);
+
+  --article-title-bg-color: var(--pink);
+  --article-title-color: var(--black);
+
+  --article-text-color: var(--light-pink);
+
+  --stylized-element-color: var(--pink);
+}

@@ -1,5 +1,172 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background: var(--bg-color) var(--cover-path) no-repeat center / cover fixed;
+}
+
+.decorated-zone {
+  display: grid;
+}
+
+.decorated-zone__header {
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr 1fr min-content min-content;
+}
+
+.decorated-zone__footer {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.decorated-zone__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--stylized-element-color);
+}
+
+.decorated-zone__element-left {
+  border-top: none;
+  border-right: none;
+  align-self: end;
+  justify-self: start;
+}
+
+.decorated-zone__element-right {
+  border-left: none;
+  border-bottom: none;
+  align-self: start;
+  justify-self: end;
+}
+
+.decorated-zone__element-rec {
+  display: flex;
+  justify-self: end;
+}
+
+.decorated-zone__text {
+  color: var(--stylized-element-color);
+  font-family: var(--main-font-family);
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.decorated-zone__circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--stylized-element-color);
+}
+
+.decorated-zone__title {
+  color: var(--title-color);
+  font-family: var(--main-font-family);
+  font-size: 116px;
+  font-weight: 800;
+  text-shadow: 2px 2px 0 var(--title-subcolor);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.header {
+  height: 667px;
+  padding: 10px;
+}
+
+.header__title {
+  text-wrap: balance;
+  text-align: start;
+  line-height: 1;
+}
+
+.header__descr {
+  margin: 55px 0 31px 0;
+}
+
+.header__theme-menu {
+  align-self: center;
+  justify-self: end;
+}
+
+.header__theme-menu-item {
+  margin-bottom: 11.5px;
+}
+
+.header__theme-menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.header__theme-menu-button {
+  padding: 1.5px 13px;
+  border: 1px solid var(--header-button-color);
+  background: transparent;
+  color: var(--header-button-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.main {
+  margin: 40px 0;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.section:last-child {
+  margin-bottom: 0px;
+}
+
+.section__title {
+  margin-bottom: 20px;
+  color: var(--section-title-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article__title {
+  background-color: var(--article-title-bg-color);
+  color: var(--article-title-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article__text {
+  margin-top: 10px;
+  color: var(--light-pink);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.article__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.article__image {
+  inline-size: 100%;
+}
+
+.footer {
+  height: 667px;
+  padding: 10px;
+}
+
+.footer__title {
+  
 }
