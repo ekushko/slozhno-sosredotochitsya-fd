@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background: var(--bg-color) var(--cover-path) no-repeat center / cover fixed;
+  background: var(--bg-color) var(--cover-path) no-repeat fixed center / cover;
 }
 
 .decorated-zone {
@@ -209,10 +209,13 @@
 @media (width >= 768px) {
   .decorated-zone.header {
     grid-template-columns: min-content 1fr 1fr min-content;
+    grid-template-rows: min-content 1fr 1fr 1fr min-content;
   }
 
   .header {
     min-height: 1024px;
+    padding: 20px;
+    padding-left: 0;
   }
 
   .header .decorated-zone__rec {
@@ -228,16 +231,31 @@
   .header__title {
     grid-column: 1/4;
     grid-row: 3;
+    align-self: center;
   }
 
   .header__descr {
     grid-column: 3/5;
     grid-row: 4;
+    height: 117px;
+    margin-left: 35px;
   }
 
   .header .decorated-zone__element-left {
     grid-column: 1;
     grid-row: 5;
+  }
+
+  .main {
+    margin: 60px 0;
+  }
+
+  .difficulties,
+  .concentration,
+  .advices,
+  .gallery {
+    padding: 0 20px;
+    margin-bottom: 80px;
   }
 
   .difficulties {
@@ -252,7 +270,7 @@
 
   .concentration {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: min-content repeat(3, 1fr);
+    grid-template-rows: repeat(4, min-content);
   }
 
   .concentration .section__title {
@@ -308,6 +326,7 @@
 
   .footer {
     min-height: 1024px;
+    padding: 20px;
   }
 
   .footer__title {
