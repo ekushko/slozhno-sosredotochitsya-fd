@@ -27,4 +27,35 @@
   --article-text-color: var(--black);
 
   --stylized-element-color: var(--black);
+
+  --rec-display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cover-path: url("../images/cover-image-light.png");
+
+  --pink: #FF8DCB;
+  --light-pink: #FFC2E6;
+  --violet: #DB00FF;
+  --black: #353430;
+
+  --bg-color: var(--black);
+
+  --title-color: var(--light-pink);
+  --title-subcolor: var(--pink);
+
+  --header-button-color: var(--pink);
+
+  --section-title-color: var(--pink);
+
+  --article-title-bg-color: var(--pink);
+  --article-title-color: var(--black);
+
+  --article-text-color: var(--black);
+
+  --stylized-element-color: var(--black);
+
+  --rec-display: none;
+  }
+} 

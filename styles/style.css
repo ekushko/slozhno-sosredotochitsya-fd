@@ -8,12 +8,12 @@
   display: grid;
 }
 
-.decorated-zone__header {
+.decorated-zone.header {
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr 1fr min-content min-content;
 }
 
-.decorated-zone__footer {
+.decorated-zone.footer {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -41,7 +41,7 @@
   justify-self: end;
 }
 
-.decorated-zone__element-rec {
+.decorated-zone__rec {
   display: flex;
   justify-self: end;
 }
@@ -54,7 +54,12 @@
   text-transform: uppercase;
 }
 
+.decorated-zone__rec-text {
+  display: var(--rec-display);
+}
+
 .decorated-zone__circle {
+  display: var(--rec-display);
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -66,13 +71,14 @@
   font-family: var(--main-font-family);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 800;
-  text-shadow: 2px 2px 0 var(--title-subcolor);
+  text-shadow: 4px 4px 0 var(--title-subcolor);
   text-transform: lowercase;
   text-align: center;
 }
 
 .header {
-  height: 667px;
+  min-height: 667px;
+  height: 1vh;
   padding: 10px;
 }
 
@@ -101,7 +107,7 @@
 
 .header__theme-menu-button {
   padding: 1.5px 13px;
-  border: 1px solid var(--header-button-color);
+  border: none;
   background: transparent;
   color: var(--header-button-color);
   font-family: var(--main-font-family);
@@ -111,18 +117,22 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:hover {
+  border-bottom: 1px solid var(--header-button-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--header-button-color);
+  pointer-events: none;
+}
+
 .main {
   margin: 40px 0;
 }
 
-.section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 0 10px;
-  margin-bottom: 50px;
-}
-
+.difficulties,
+.concentration,
+.advices,
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -131,12 +141,11 @@
   margin-bottom: 50px;
 }
 
-.section:last-child {
+.gallery {
   margin-bottom: 0px;
 }
 
 .section__title {
-  margin-bottom: 20px;
   color: var(--section-title-color);
   font-family: var(--main-font-family);
   font-size: 18px;
@@ -168,6 +177,10 @@
   font-weight: normal;
 }
 
+.article__text span {
+  text-shadow: 2px 2px 0 var(--title-subcolor);
+}
+
 .article__images {
   display: grid;
   grid-template-columns: 1fr;
@@ -183,7 +196,8 @@
 }
 
 .footer {
-  height: 667px;
+  min-height: 667px;
+  height: 1vh;
   padding: 10px;
 }
 
@@ -192,7 +206,7 @@
 }
 
 @media (width >= 768px) {
-  .decorated-zone__header {
+  .decorated-zone.header {
     grid-template-columns: min-content 1fr 1fr min-content;
   }
 
@@ -221,43 +235,85 @@
     grid-row: 5;
   }
 
-  .section {
+  .difficulties {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr min-content min-content;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .section__title {
+  .difficulties .section__title {
     grid-column: 1;
     grid-row: 1/-1;
   }
 
-  .article__images {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  .concentration {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content repeat(3, 1fr);
   }
 
-  .article__image-sunset {
+  .concentration .section__title {
+    grid-column: 1;
+  }
+
+  .concentration .article {
+    grid-column: 1/-1;
+  }
+
+  .advices {
+    grid-template-columns:  repeat(3, 1fr);
+  }
+
+  .advices .section__title {
+    grid-column: 1;
+    grid-row: 1/-1;
+  }
+
+  .advices .article {
+    grid-column: 2/-1;
+  }
+
+  .article__images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .sunset {
     grid-column: 1/3;
     grid-row: 1;
   }
 
-  .article__image-ice-cream {
+  .ice-cream {
     grid-column: 3;
     grid-row: 1/3;
   }
 
-  .article__image-tape {
+  .tape {
     grid-column: 1;
     grid-row: 2/4;
   }
 
-  .article__image-books {
+  .books {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .article__image-street {
+  .street {
     grid-column: 2/4;
     grid-row: 3;
+  }
+}
+
+@media (width >= 1024px) {
+  .concentration {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content 1fr;
+  }
+
+  .concentration .section__title {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .concentration .article {
+    grid-column: initial;
   }
 }

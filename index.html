@@ -18,9 +18,9 @@
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
-    <header class="header decorated-zone decorated-zone__header">
-      <div class="decorated-zone__element-rec">
-        <div class="decorated-zone__text">REC</div>
+    <header class="header decorated-zone">
+      <div class="decorated-zone__rec">
+        <div class="decorated-zone__text decorated-zone__rec-text">REC</div>
         <div class="decorated-zone__element decorated-zone__element-right">
           <div class="decorated-zone__circle"></div>
         </div>
@@ -53,13 +53,14 @@
       </nav>
       <h1 class="header__title decorated-zone__title">No focus</h1>
       <div class="header__descr article__title">
-        Что делать, когда не можешь делать ничего Или почему нам так сложно
+        Что делать, когда не можешь делать ничего<br>
+        Или почему нам так сложно
         сконцентрироваться, особенно когда очень надо
       </div>
       <div class="decorated-zone__element decorated-zone__element-left"></div>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="section difficulties">
         <div class="section__title">Почему сосредоточиться так сложно</div>
         <article class="article">
           <div class="article__title">Многозадачность</div>
@@ -67,7 +68,7 @@
             Особенно сложно сосредоточиться, когда задач много и все они —
             важные. Где же легендарная многозадачность, когда она так нужна вам
             (и всем нанимающим менеджерам этого мира)? А дело в том, что её
-            просто не существует. Исследователи выяснили, что мозгу тяжело
+            просто не существует. Исследователи <span>выяснили</span>, что мозгу тяжело
             концентрироваться даже на двух делах одновременно. А когда в поле
             внимания попадает несколько важных задач, организм паникует и
             выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -88,7 +89,7 @@
           </div>
         </article>
       </section>
-      <section class="section">
+      <section class="section concentration">
         <div class="section__title">Что снижает концентрацию внимания?</div>
         <article class="article">
           <div class="article__title">Концентрация</div>
@@ -125,7 +126,7 @@
           </div>
         </article>
       </section>
-      <section class="section">
+      <section class="section advices">
         <div class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
@@ -153,7 +154,7 @@
           <div class="article__subtitle">Прогуляйтесь</div>
           <div class="article__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-            показал, что созерцание природы повышает концентрацию, в то время
+            <span>показал</span>, что созерцание природы повышает концентрацию, в то время
             как после просмотра городских пейзажей она наоборот понижается.
             Можно совместить прогулку с физическими упражнениями или бегом — так
             в мозг поступит ещё больше кислорода и он будет лучше работать. Но и
@@ -175,40 +176,45 @@
           </div>
         </article>
       </section>
-      <section class="gallery">
+      <section class="section gallery">
         <article class="article">
           <div class="article__title">А можно в картинках?</div>
           <div class="article__images">
             <img
-              class="article__image article__image-sunset"
+              class="article__image sunset"
               src="./images/sunset.png"
               alt="Рассвет"
+              loading="lazy"
             />
             <img
-              class="article__image article__image-ice-cream"
+              class="article__image ice-cream"
               src="./images/ice-cream.png"
               alt="Мороженое"
+              loading="lazy"
             />
             <img
-              class="article__image article__image-tape"
+              class="article__image tape"
               src="./images/tape.png"
               alt="Аудиокассета"
+              loading="lazy"
             />
             <img
-              class="article__image article__image-books"
+              class="article__image books"
               src="./images/books.png"
               alt="Книги"
+              loading="lazy"
             />
             <img
-              class="article__image article__image-street"
+              class="article__image street"
               src="./images/street.png"
               alt="Улица"
+              loading="lazy"
             />
           </div>
         </article>
       </section>
     </main>
-    <footer class="footer decorated-zone decorated-zone__footer">
+    <footer class="footer decorated-zone">
       <div class="decorated-zone__element decorated-zone__element-right"></div>
       <div class="footer__title decorated-zone__title">Focus</div>
       <div class="decorated-zone__element decorated-zone__element-left"></div>

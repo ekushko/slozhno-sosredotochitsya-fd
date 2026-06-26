@@ -28,4 +28,6 @@
   --article-text-color: var(--light-pink);
 
   --stylized-element-color: var(--pink);
+
+  --rec-display: block;
 }
