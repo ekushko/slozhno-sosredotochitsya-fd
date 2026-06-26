@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background: var(--bg-color) var(--cover-path) no-repeat fixed center / cover;
+  background: var(--bg-color) var(--cover-path) no-repeat center / cover;
+  background-attachment: fixed;
 }
 
 .decorated-zone {
@@ -361,9 +362,6 @@
 
   .concentration .article {
     grid-row: 2;
-  }
-
-  .concentration .article {
     grid-column: initial;
   }
 
