@@ -201,10 +201,6 @@
   padding: 10px;
 }
 
-.footer__title {
-  
-}
-
 @media (width >= 768px) {
   .decorated-zone.header {
     grid-template-columns: min-content 1fr 1fr min-content;
