@@ -309,6 +309,12 @@
   .footer {
     min-height: 1024px;
   }
+
+  .footer__title {
+    text-wrap: balance;
+    text-align: center;
+    line-height: 0.8;
+  }
 }
 
 @media (width >= 1024px) {
