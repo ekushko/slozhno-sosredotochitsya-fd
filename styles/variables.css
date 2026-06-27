@@ -18,8 +18,9 @@
   --light-pink: #FF8DCB;
   --light-pudra: #FFC2E6;
   --light-black: #353430;
+  --light-light-pink: #FFF1F7;
 
-  --bg-color: var(--black);
+  --bg-color: var(--light-light-pink);
 
   --title-color: var(--violet);
   --title-subcolor: var(--pink);
