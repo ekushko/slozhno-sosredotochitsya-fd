@@ -175,6 +175,10 @@
   margin-bottom: 50px;
 }
 
+.gallery {
+  margin-bottom: 0;
+}
+
 .section__title {
   color: var(--section-title-color);
   font-family: var(--main-font-family);
@@ -311,6 +315,10 @@
     margin-bottom: 80px;
   }
 
+  .gallery {
+    margin-bottom: 0px;
+  }
+
   .difficulties {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -386,7 +394,7 @@
   }
 
   .footer {
-    min-height: 1004px;
+    min-height: 1024px;
     padding: 0 20px 20px 20px;
   }
 
@@ -489,7 +497,7 @@
   }
 
   .footer {
-    min-height: 748px;
+    min-height: 768px;
   }
 
   .footer__title {
