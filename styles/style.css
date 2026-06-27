@@ -12,7 +12,7 @@
 .decorated-zone::before {
   content: '●';
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: 25px;
   height: 25px;
@@ -54,7 +54,7 @@
 .decorated-zone__rec {
   display: var(--rec-display);
   text-align: end;
-  padding-top: 4px;
+  justify-content: end;
   color: var(--stylized-element-color);
   font-family: var(--main-font-family);
   font-weight: normal;
@@ -70,7 +70,8 @@
 }
 
 .header__theme-menu {
-  align-self: center;
+  margin-top: 40px;
+  align-self: start;
   justify-self: end;
   grid-column: 1/-1;
 }
@@ -119,7 +120,7 @@
 
 .header {
   min-height: 667px;
-  height: 100vh;
+  /*height: 100vh;*/
   padding: 10px;
 }
 
@@ -255,7 +256,7 @@
 }
 
 .footer__title {
-  align-self: center;
+  align-self: start;
   text-align: center;
 }
 
