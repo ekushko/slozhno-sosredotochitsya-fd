@@ -142,10 +142,7 @@
   margin: 40px 0;
 }
 
-.difficulties,
-.concentration,
-.advices,
-.gallery {
+.section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -176,12 +173,7 @@
 
 .article__subtitle {
   margin-top: 20px;
-  background-color: var(--article-title-bg-color);
-  color: var(--article-title-color);
-  font-family: var(--main-font-family);
-  font-size: 18px;
   font-weight: normal;
-  line-height: var(--main-line-height);
 }
 
 .article__text {
@@ -275,10 +267,7 @@
     margin: 60px 0;
   }
 
-  .difficulties,
-  .concentration,
-  .advices,
-  .gallery {
+  .section {
     padding: 0 20px;
     margin-bottom: 80px;
   }
