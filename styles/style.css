@@ -283,17 +283,25 @@
     grid-row: 1/-1;
   }
 
+  .difficulties .article {
+    grid-column: 2;
+  }
+
   .concentration {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(2, min-content);
   }
 
   .concentration .section__title {
     grid-column: 1;
   }
 
-  .concentration .article {
+  .concentration .article__container {
+    grid-row: 2;
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .advices {
@@ -366,18 +374,18 @@
   }
 
   .concentration {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
   }
 
   .concentration .section__title {
     grid-column: 1;
-    grid-row: 1;
   }
 
-  .concentration .article {
-    grid-row: 2;
-    grid-column: initial;
+  .concentration .article__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
   }
 
   .article__images {
