@@ -79,7 +79,7 @@
 
 .header {
   min-height: 667px;
-  height: 1vh;
+  height: 100vh;
   padding: 10px;
 }
 
@@ -117,6 +117,7 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -330,6 +331,7 @@
 
   .footer {
     min-height: 980px;
+    height: 100vh;
     padding: 0 20px;
   }
 
