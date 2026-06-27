@@ -80,7 +80,7 @@
   text-wrap: balance;
   text-align: start;
   align-self: end;
-  line-height: 0.8;
+  line-height: 0.82;
   grid-column: 1/-1;
 }
 
@@ -358,7 +358,7 @@
 
   .advices .article {
     grid-column: 2/-1;
-    margin-left: 10px;
+    margin-left: 8px;
   }
 
   .article__images {
@@ -403,6 +403,7 @@
     text-wrap: balance;
     text-align: center;
     line-height: 0.8;
+    margin-top: 20px;
   }
 }
 
@@ -501,6 +502,7 @@
   }
 
   .footer__title {
+    margin-top: 20px;
     font-size: 157px;
     align-self: center;
   }
