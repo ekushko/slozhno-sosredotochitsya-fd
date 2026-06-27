@@ -48,7 +48,7 @@
 
 .header.decorated-zone {
   grid-template-columns: 1fr min-content;
-  grid-template-rows: min-content 1fr 1fr min-content min-content;
+  grid-template-rows: min-content min-content 1fr min-content min-content;
 }
 
 .decorated-zone__rec {
@@ -79,6 +79,7 @@
 .header__title {
   text-wrap: balance;
   text-align: start;
+  align-self: end;
   line-height: 0.8;
   grid-column: 1/-1;
 }
@@ -120,7 +121,7 @@
 
 .header {
   min-height: 667px;
-  height: 100vh;
+  /*height: 100vh;*/
   padding: 10px;
 }
 
@@ -245,12 +246,12 @@
 
 .footer {
   min-height: 667px;
-  height: 100vh;
+  /*height: 100vh;*/
   padding: 10px;
 }
 
 .footer__title {
-  align-self: start;
+  align-self: center;
   text-align: center;
 }
 
@@ -385,8 +386,7 @@
   }
 
   .footer {
-    min-height: 980px;
-    height: 100vh;
+    min-height: 1004px;
     padding: 0 20px 20px 20px;
   }
 
@@ -455,6 +455,10 @@
     gap: 10px;
   }
 
+  .difficulties {
+    gap: 20px 10px;
+  }
+
   .concentration {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, min-content);
@@ -470,18 +474,26 @@
     gap: 20px;
   }
 
+  .advices {
+    gap: 20px 20px;
+  }
+
+  .advices .article {
+    grid-column: 2/-1;
+    margin-left: 0px;
+  }
+
   .article__images {
     grid-template-columns: 1fr 315px 1fr;
     grid-template-rows: 260px 315px 1fr ;
   }
 
   .footer {
-    min-height: 768px;
+    min-height: 748px;
   }
 
   .footer__title {
     font-size: 157px;
-    align-self: start;
-    margin-top: 60px;
+    align-self: center;
   }
 }
