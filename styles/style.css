@@ -316,7 +316,7 @@
   }
 
   .gallery {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .difficulties {
@@ -394,7 +394,7 @@
   }
 
   .footer {
-    min-height: 1004px;
+    min-height: 1024px;
     padding: 20px;
   }
 
@@ -498,7 +498,7 @@
   }
 
   .footer {
-    min-height: 748px;
+    min-height: 768px;
   }
 
   .footer__title {
