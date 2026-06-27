@@ -7,7 +7,7 @@
 :root.theme-light {
   --cover-path: url("../images/cover-image-light.png");
 
-  --bg-color: var(--light-black);
+  --bg-color: var(--light-light-pink);
 
   --title-color: var(--light-pudra);
   --title-subcolor: var(--light-pink);
@@ -35,7 +35,7 @@
   :root {
     --cover-path: url("../images/cover-image-light.png");
 
-    --bg-color: var(--light-black);
+    --bg-color: var(--light-light-pink);
 
     --title-color: var(--light-pudra);
     --title-subcolor: var(--light-pink);
