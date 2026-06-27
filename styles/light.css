@@ -7,22 +7,22 @@
 :root.theme-light {
   --cover-path: url("../images/cover-image-light.png");
 
-  --bg-color: var(--ligth-black);
+  --bg-color: var(--light-black);
 
-  --title-color: var(--ligth-pudra);
-  --title-subcolor: var(--ligth-pink);
+  --title-color: var(--light-pudra);
+  --title-subcolor: var(--light-pink);
 
-  --header-button-color: var(--ligth-pink);
-  --header-button-border-color: var(--ligth-tt-pink);
+  --header-button-color: var(--light-pink);
+  --header-button-border-color: var(--light-tt-pink);
 
-  --section-title-color: var(--ligth-pink);
+  --section-title-color: var(--light-pink);
 
-  --article-title-bg-color: var(--ligth-pink);
-  --article-title-color: var(--ligth-black);
+  --article-title-bg-color: var(--light-pink);
+  --article-title-color: var(--light-black);
 
-  --article-text-color: var(--ligth-black);
+  --article-text-color: var(--light-black);
 
-  --stylized-element-color: var(--ligth-black);
+  --stylized-element-color: var(--light-black);
 
   --rec-display: none;
 }
@@ -31,21 +31,21 @@
   :root {
     --cover-path: url("../images/cover-image-light.png");
 
-    --bg-color: var(--ligth-black);
+    --bg-color: var(--light-black);
 
-    --title-color: var(--ligth-pudra);
-    --title-subcolor: var(--ligth-pink);
+    --title-color: var(--light-pudra);
+    --title-subcolor: var(--light-pink);
 
-    --header-button-color: var(--ligth-pink);
+    --header-button-color: var(--light-pink);
 
-    --section-title-color: var(--ligth-pink);
+    --section-title-color: var(--light-pink);
 
-    --article-title-bg-color: var(--ligth-pink);
-    --article-title-color: var(--ligth-black);
+    --article-title-bg-color: var(--light-pink);
+    --article-title-color: var(--light-black);
 
-    --article-text-color: var(--ligth-black);
+    --article-text-color: var(--light-black);
 
-    --stylized-element-color: var(--ligth-black);
+    --stylized-element-color: var(--light-black);
 
     --rec-display: none;
   }
