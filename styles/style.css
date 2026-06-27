@@ -120,7 +120,7 @@
 
 .header {
   min-height: 667px;
-  /*height: 100vh;*/
+  height: 100vh;
   padding: 10px;
 }
 
@@ -172,10 +172,6 @@
   gap: 20px;
   padding: 0 10px;
   margin-bottom: 50px;
-}
-
-.gallery {
-  margin-bottom: 0px;
 }
 
 .section__title {
