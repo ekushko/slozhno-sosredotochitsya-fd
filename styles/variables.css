@@ -9,10 +9,12 @@
   --main-font-family: 'IBM Plex mono', monospace;
   --main-line-height: 1.3;
 
+  --tt-pink: #FF007050;
   --pink: #FF0070;
   --pudra: #F1B2CE;
   --violet: #DB00FF;
   --black: #000028;
+  --light-tt-pink: #FF8DCB50;
   --ligth-pink: #FF8DCB;
   --light-pudra: #FFC2E6;
   --light-black: #353430;
@@ -23,13 +25,14 @@
   --title-subcolor: var(--pink);
 
   --header-button-color: var(--pink);
+  --header-button-hover-color: var(--tt-pink);
 
   --section-title-color: var(--pink);
 
   --article-title-bg-color: var(--pink);
   --article-title-color: var(--black);
 
-  --article-text-color: var(--light-pink);
+  --article-text-color: var(--pudra);
 
   --stylized-element-color: var(--pink);
 

@@ -121,8 +121,17 @@
 }
 
 .header__theme-menu-button:hover {
+  border: 1px solid var(--header-button-hover-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--header-button-color);
 }
+
 
 .header__theme-menu-button_active {
   border: 1px solid var(--header-button-color);
@@ -184,8 +193,22 @@
   line-height: var(--main-line-height);
 }
 
-.article__text span {
+.article__text a {
+  text-decoration: none;
   text-shadow: 2px 2px 0 var(--title-subcolor);
+}
+
+.article__text a:hover {
+  text-decoration: underline;
+}
+
+.article__text a:focus {
+  outline: none;
+}
+
+.article__text a:focus-visible {
+  outline: 1px solid var(--article-text-color);
+  outline-offset: 1px;
 }
 
 .article__images {
