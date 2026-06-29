@@ -27,10 +27,6 @@
   --rec-display: none;
 }
 
-:root.theme-light .decorated-zone::before {
-  content: ' ';
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --cover-path: url("../images/cover-image-light.png");
@@ -52,9 +48,5 @@
     --stylized-element-color: var(--light-black);
 
     --rec-display: none;
-  }
-
-  .decorated-zone::before {
-    content: '';
   }
 } 

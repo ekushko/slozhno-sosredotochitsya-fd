@@ -54,7 +54,6 @@
 .decorated-zone__rec {
   display: var(--rec-display);
   text-align: end;
-  /*justify-content: end;*/
   color: var(--stylized-element-color);
   font-family: var(--main-font-family);
   font-weight: normal;
@@ -112,7 +111,6 @@
 }
 
 .footer.decorated-zone::before {
-  content: '';
   grid-column: 1;
   grid-row: 1;
 }
