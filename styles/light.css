@@ -36,7 +36,8 @@
     --title-color: var(--light-pudra);
     --title-subcolor: var(--light-pink);
 
-    --header-button-color: var(--light-pink);
+    --header-button-color: var(--light-black);
+    --header-button-hover-color: var(--light-tt-black);
 
     --section-title-color: var(--light-black);
 
