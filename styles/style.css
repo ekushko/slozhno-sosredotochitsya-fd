@@ -3,6 +3,7 @@
 .page {
   background: var(--bg-color) var(--cover-path) no-repeat center / cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .decorated-zone {
